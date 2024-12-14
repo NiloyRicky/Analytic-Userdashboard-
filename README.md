@@ -13,7 +13,7 @@ Tech Stack
 
 Frontend: React, Ant Design (UI components)
 
-State Management: Redux Toolkit
+State Management: Redux Toolkit and Redux Thunk
 
 Data Visualization: Charts.js
 
@@ -24,6 +24,7 @@ CSS Framework: Ant Design + Custom CSS
 
 
 ---
+Assumption:I have taken dummy data(mock data)for Charts section
 
 Features
 
