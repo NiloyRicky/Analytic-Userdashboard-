@@ -1,0 +1,126 @@
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App{
+  display:flex;
+  width:100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+.AppHeader{
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.AppFooter{
+  margin-top: 19px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+.SideMenuAndAppContent {
+  margin-top: 19px;
+  display: flex;
+  flex: 1; /* Take all available space */
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.AppContent{
+  width:100%;
+}
+
+.DashboardCardsWrapper {
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap:16px;
+  
+
+  justify-content: space-between; 
+  gap: 16px; 
+  margin-bottom: 3px;
+  flex:1; 
+}
+
+.DashboardCard {
+  flex: 1 1 calc(25% - 16px); /* Four cards per row on larger screens */
+  min-width: 300px; /* Minimum width for each card */
+}
+
+/*TabkleWrapper*/
+
+
+
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .AppHeader {
+    flex-direction: row; /* Stack the header elements vertically on mobile */
+    height: auto; /* Allow the header to adjust its height based on content */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .AppHeader img {
+    width: 25px; /* Make the logo smaller on mobile */
+    height: auto;
+    margin-bottom: 10px; /* Add space between the logo and other elements */
+  }
+
+  .AppHeader .ant-search {
+    width: 50%; /* Make the search input take full width on mobile */
+    margin-top: 10px; /* Add space between search and other elements */
+  }
+
+  .AppHeader .ant-space {
+    margin-left: 0; /* Remove extra margin between elements */
+    margin-top: 10px; /* Add space between search bar and icon */
+  }
+
+  .AppHeader .ant-space .anticon {
+    display:none;
+    font-size: 20px; /* Smaller icon on mobile */
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .AppHeader .ant-search {
+    width: 90%; /* Make the search input slightly smaller on very small screens */
+  }
+
+  .AppHeader .ant-space .anticon {
+    font-size: 18px; /* Further reduce the icon size for very small screens */
+  }
+}
+
+/*Sidebar*/
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .SideMenuAndAppContent {
+    display: flex;
+    flex-direction: row; /* Stack sidebar and content vertically on small screens */
+    margin-top: 0; /* Adjust margin for mobile screens */
+  }
+
+  /* Additional adjustments for mobile content */
+  .SideMenu {
+    width: 100%; /* Sidebar should take full width on mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .DashboardCardsWrapper {
+    flex: 1 1 calc(50% - 16px); /* Two cards per row on smaller screens */
+  }
+}
