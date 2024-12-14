@@ -93,7 +93,7 @@ Folder Structure
   ├── redux  
   │   ├── store.js  
   │   └── slices  
-  │       └── searchSlice.js  
+  │       └── searchSlice.js
   ├── App.js  
   ├── index.js  
   └── styles.css
@@ -106,6 +106,7 @@ Installation and Setup
 1. Clone the repository:
 
 git clone https://github.com/your-username/analytics-dashboard.git
+
 cd redux
 
 
