@@ -93,7 +93,8 @@ Folder Structure
   ├── redux  
   │   ├── store.js  
   │   └── slices  
-  │       └── searchSlice.js
+  └── searchSlice.js
+  
   ├── App.js  
   ├── index.js  
   └── styles.css
