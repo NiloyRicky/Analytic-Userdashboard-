@@ -1,70 +1,142 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+User and Analytics Dashboard
 
-## Available Scripts
+Project Description
 
-In the project directory, you can run:
+The User and Analytics Dashboard is a dynamic and responsive web application built using React with state management through Redux. It features various functionalities such as data visualization using Charts.js, dynamic user interaction like search, view details, and delete actions, and displays key metrics on cards.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Tech Stack
 
-### `npm run build`
+Frontend: React, Ant Design (UI components)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+State Management: Redux Toolkit
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Data Visualization: Charts.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Routing: React Router DOM 
 
-### `npm run eject`
+CSS Framework: Ant Design + Custom CSS
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Features
 
-## Learn More
+1. Dynamic Metrics Display:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Total Users
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Active Users
 
-### Code Splitting
+Inactive Users
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Deleted Users
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+2. Interactive Dashboard Functionalities:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Search users dynamically using Redux state.
 
-### Advanced Configuration
+View detailed user information on a dedicated page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Delete users and update metrics in real-time.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+3. Data Visualization:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Charts.js used to display:
+
+User registration trends over the last 6 months (Line Chart).
+
+Role-wise distribution of users (Bar Chart).
+
+
+
+
+4. Responsive Design:
+
+Fully responsive layout with a Hamburger Menu for smaller screens.
+
+
+
+5. Dynamic Data:
+
+Uses mock data for users with realistic properties (name, email, role, etc.).
+
+
+
+
+
+---
+
+
+
+Folder Structure
+
+/src  
+  ├── components  
+  │   ├── AppHeader  
+  │   │   └── Navbar.js  
+  │   ├── Dashboard  
+  │   │   ├── Cards.js  
+  │   │   ├── Dashboard.js  
+  │   │   └── Table.js  
+  │   ├── SideMenu  
+  │       └── SideMenu.js  
+  ├── redux  
+  │   ├── store.js  
+  │   └── slices  
+  │       └── searchSlice.js  
+  ├── App.js  
+  ├── index.js  
+  └── styles.css
+
+
+---
+
+Installation and Setup
+
+1. Clone the repository:
+
+git clone https://github.com/your-username/analytics-dashboard.git
+cd redux
+
+
+2. Install dependencies:
+
+npm install
+
+
+3. Start the development server:
+
+npm start
+
+
+4. Open the app in your browser at http://localhost:3000.
+
+
+
+
+---
+
+Usage
+
+1. Search: Use the search bar at the top to filter users dynamically.
+
+
+2. View User Details: Click on the View button in the table to see a user's full details.
+
+
+3. Delete User: Click the Delete button to remove a user and update the dashboard metrics.
+
+
+4. Charts: View user registration trends and role distributions.
+
+
